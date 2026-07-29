@@ -1,15 +1,24 @@
 package test;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import models.CreateCollectionResponse;
-import services.GET;
-import services.POST;
+import reports.ExtentManager;
+import services.CreateObjects;
+import services.GetObjects;
+import utils.TestListener;
 
+@Listeners(utils.TestListener.class)
 public class Placeobjectordertest {
 	
 	
@@ -20,7 +29,7 @@ public class Placeobjectordertest {
 	
 	@Test
 	public void getCollection() {
-	Response res = GET.callGet();
+	Response res = GetObjects.callGet();
 	
 	Assert.assertEquals(res.getStatusCode(), 200);
 	Assert.assertTrue(res.time() < 3000);
@@ -31,7 +40,7 @@ public class Placeobjectordertest {
 	@Test
 	public void getObjects() {	
 		
-		Response res = GET.getObjects();
+		Response res = GetObjects.getObjects();
 		
 		Assert.assertEquals(res.getStatusCode(),200);
 		Assert.assertTrue(res.time()<3000);
@@ -40,7 +49,7 @@ public class Placeobjectordertest {
 	
 	@Test
 	public void getObjectId() {	
-		Response res = GET.getObjectId();
+		Response res = GetObjects.getObjectId();
 		
 		Assert.assertEquals(res.getStatusCode(),200);
 		Assert.assertTrue(res.time()<3000);
@@ -50,7 +59,7 @@ public class Placeobjectordertest {
 	@Test
 	public void createCollection() {
 		
-		Response res = POST.createCollections();
+		Response res = CreateObjects.createCollections();
 		
 		Assert.assertEquals(res.getStatusCode(), 200, res.asString());
 		
@@ -65,4 +74,6 @@ public class Placeobjectordertest {
 		Assert.assertEquals(resbody.getData().get("CPU model"),"Intel Core i9");
 		Assert.assertTrue(res.time() <3000);
 	
-}}
+}
+
+}

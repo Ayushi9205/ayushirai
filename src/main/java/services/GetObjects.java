@@ -4,7 +4,7 @@ import base.Base;
 import constants.Endpoints;
 import io.restassured.response.Response;
 
-public class GET {
+public class GetObjects {
 	
 	public static Response callGet() {	
 		return Base.getRequest().when().get(Endpoints.COLLECTIONS).then().extract().response();	

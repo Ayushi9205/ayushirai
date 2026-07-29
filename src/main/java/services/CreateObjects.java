@@ -8,7 +8,7 @@ import constants.Endpoints;
 import io.restassured.response.Response;
 import models.CreateCollectionRequest;
 
-public class POST {
+public class CreateObjects {
 
 	public static Response createCollections() {
 		
