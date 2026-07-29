@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-23T19:48:13 IST" name="Default suite" finished-at="2026-07-23T19:48:17 IST" duration-ms="4021">
+  <suite started-at="2026-07-29T16:33:39 IST" name="Default suite" finished-at="2026-07-29T16:33:44 IST" duration-ms="4456">
     <groups>
     </groups>
-    <test started-at="2026-07-23T19:48:13 IST" name="Default test" finished-at="2026-07-23T19:48:17 IST" duration-ms="4021">
-      <class name="test.UserAccount">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.UserAccount@1573f9fc]" started-at="2026-07-23T19:48:13 IST" name="beforeSuite" finished-at="2026-07-23T19:48:13 IST" duration-ms="224" status="PASS">
+    <test started-at="2026-07-29T16:33:39 IST" name="Default test" finished-at="2026-07-29T16:33:44 IST" duration-ms="4456">
+      <class name="test.Placeobjectordertest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:39 IST" name="setup" finished-at="2026-07-29T16:33:40 IST" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method signature="testCreateUser()[pri:0, instance:test.UserAccount@1573f9fc]" started-at="2026-07-23T19:48:13 IST" name="testCreateUser" finished-at="2026-07-23T19:48:17 IST" duration-ms="3409" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="createCollection()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:40 IST" name="createCollection" finished-at="2026-07-29T16:33:42 IST" duration-ms="2818" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateUser -->
-        <test-method signature="testLogin()[pri:0, instance:test.UserAccount@1573f9fc]" started-at="2026-07-23T19:48:17 IST" name="testLogin" finished-at="2026-07-23T19:48:17 IST" duration-ms="575" status="PASS">
+        </test-method> <!-- createCollection -->
+        <test-method signature="getCollection()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:42 IST" name="getCollection" finished-at="2026-07-29T16:33:43 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.UserAccount@1573f9fc]" started-at="2026-07-23T19:48:17 IST" name="afterSuite" finished-at="2026-07-23T19:48:17 IST" duration-ms="268" status="PASS">
+        </test-method> <!-- getCollection -->
+        <test-method signature="getObjectId()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:43 IST" name="getObjectId" finished-at="2026-07-29T16:33:43 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- test.UserAccount -->
+        </test-method> <!-- getObjectId -->
+        <test-method signature="getObjects()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:43 IST" name="getObjects" finished-at="2026-07-29T16:33:44 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getObjects -->
+      </class> <!-- test.Placeobjectordertest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

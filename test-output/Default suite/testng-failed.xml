@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.UserAccount">
+      <class name="test.Placeobjectordertest">
         <methods>
-          <include name="testLogin"/>
+          <include name="getCollection"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- test.UserAccount -->
+      </class> <!-- test.Placeobjectordertest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

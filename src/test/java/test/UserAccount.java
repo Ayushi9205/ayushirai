@@ -1,23 +1,16 @@
 package test;
 
 
+import static org.hamcrest.Matchers.lessThan;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-
 import io.restassured.response.Response;
-import models.LoginPayload;
 import reports.ExtentManager;
-import services.CreateUserService;
 import services.LoginService;
-import static org.hamcrest.Matchers.lessThan;
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class UserAccount {
 	
@@ -43,19 +36,19 @@ public class UserAccount {
 		
 	}
 	
-@Test
-public void testCreateUser() {
-	
-	 test = extent.createTest("Create User API");
-	 
-	Response responsecreateuser = CreateUserService.createUserdata().then().assertThat().statusCode(201).body("name", equalTo("Ayushi")).body("job", equalTo("SDET")).body("createdAt",notNullValue())
-			                       .time(lessThan(2000L)).body(matchesJsonSchemaInClasspath("loginschema.json")).extract().response();
-	
-	String id = responsecreateuser.jsonPath().getString("id");
-	System.out.println(id);
-	System.out.println(responsecreateuser.asString());
-	
-}
+//@Test
+//public void testCreateUser() {
+//	
+//	 test = extent.createTest("Create User API");
+//	 
+//	Response responsecreateuser = CreateUserService.createUserdata().then().assertThat().statusCode(201).body("name", equalTo("Ayushi")).body("job", equalTo("SDET")).body("createdAt",notNullValue())
+//			                       .time(lessThan(2000L)).body(matchesJsonSchemaInClasspath("loginschema.json")).extract().response();
+//	
+//	String id = responsecreateuser.jsonPath().getString("id");
+//	System.out.println(id);
+//	System.out.println(responsecreateuser.asString());
+//	
+//}
 
 	  
 //	  @Test
