@@ -2,28 +2,40 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-29T16:33:39 IST" name="Default suite" finished-at="2026-07-29T16:33:44 IST" duration-ms="4456">
+  <suite started-at="2026-07-29T21:14:14 IST" name="Default suite" finished-at="2026-07-29T21:14:19 IST" duration-ms="4478">
     <groups>
     </groups>
-    <test started-at="2026-07-29T16:33:39 IST" name="Default test" finished-at="2026-07-29T16:33:44 IST" duration-ms="4456">
+    <test started-at="2026-07-29T21:14:14 IST" name="Default test" finished-at="2026-07-29T21:14:19 IST" duration-ms="4478">
       <class name="test.Placeobjectordertest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:39 IST" name="setup" finished-at="2026-07-29T16:33:40 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:14 IST" name="setup" finished-at="2026-07-29T21:14:15 IST" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createCollection()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:40 IST" name="createCollection" finished-at="2026-07-29T16:33:42 IST" duration-ms="2818" status="PASS">
+        <test-method signature="createCollection()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:15 IST" name="createCollection" finished-at="2026-07-29T21:14:18 IST" duration-ms="2916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCollection -->
-        <test-method signature="getCollection()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:42 IST" name="getCollection" finished-at="2026-07-29T16:33:43 IST" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:18 IST" name="setup" finished-at="2026-07-29T21:14:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getCollection()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:18 IST" name="getCollection" finished-at="2026-07-29T21:14:18 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCollection -->
-        <test-method signature="getObjectId()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:43 IST" name="getObjectId" finished-at="2026-07-29T16:33:43 IST" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:18 IST" name="setup" finished-at="2026-07-29T21:14:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getObjectId()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:18 IST" name="getObjectId" finished-at="2026-07-29T21:14:18 IST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getObjectId -->
-        <test-method signature="getObjects()[pri:0, instance:test.Placeobjectordertest@2d1ef81a]" started-at="2026-07-29T16:33:43 IST" name="getObjects" finished-at="2026-07-29T16:33:44 IST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:18 IST" name="setup" finished-at="2026-07-29T21:14:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getObjects()[pri:0, instance:test.Placeobjectordertest@5656be13]" started-at="2026-07-29T21:14:18 IST" name="getObjects" finished-at="2026-07-29T21:14:19 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getObjects -->

@@ -4,7 +4,7 @@
 <suite name="TestSuite" parallel = "tests" thread-count="2">
     <test name="API Tests">
         <classes>
-            <class name="test.UserAccount"/>
+            <class name="test.Placeobjectordertest"/>
         </classes>
     </test>
 </suite>
